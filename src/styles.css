@@ -203,6 +203,36 @@
 
 
 
+/* home-video-container */
+.home-video-container{
+    color: white; 
+    margin-top:15px;
+}
+
+.home-cards{
+    width:300px; 
+    /* border:5px solid yellow; */
+    height:317px;
+    overflow: hidden;
+    padding:0px; margin:0px;
+}
+
+
+
+.home-cards-second-row .col-2{
+    padding:0px; 
+}
+.home-cards-second-row .col-2 img{
+    margin-left: 10px;
+    width: 50px;
+}
+
+.home-cards-image img{
+    max-width: 100%;
+}
+
+
+
 
 @media (max-width:800px){
     .sidebar{
