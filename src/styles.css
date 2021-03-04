@@ -232,6 +232,40 @@
 }
 
 
+/* individual side cards */
+.individual-side-cards .row{
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-likes-title .likes-dislikes .row .col-6 .right-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.youtube-likes-title .likes-dislikes .row .col-6 .right-icons button{
+    color: gray;
+    border: none;
+    outline: none;
+}
+
+
+
+.subscribe-button{
+    background-color: red;
+    color: white;
+    outline:none;
+    border:none;
+    padding:8px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
 
 
 @media (max-width:800px){

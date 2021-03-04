@@ -1,12 +1,37 @@
 <app-navbar></app-navbar>
-<div class="row">
-    <div class="col-1">
-        <div class="sidebar">
-            <app-sidebar></app-sidebar>
-        </div>
-    </div>
 
-    <div class="col-11" style="color:white;">
-        hello its me I was wondering if after all these yeasts
-    </div>
+<div class="individual-video">
+    <div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div class="row">
+                <video controls style="margin-top:20px">
+                    <source src="..." type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <!-- likes -->
+                    <app-youtube-likes-title></app-youtube-likes-title>
+                </div>
+                <hr style="color: white;">
+                <div class="row" style="margin-bottom: 20px;">
+                    <!-- show more -->
+                    <app-subscribe></app-subscribe>
+                </div>
+                <hr style="color: white;">
+                <div class="row">
+                    <!-- comment -->
+                    <app-comments></app-comments>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="margin-top: 20px;">
+            <app-individual-side-cards></app-individual-side-cards>
+        </div>
+    </div>    
 </div>
+</div>
+

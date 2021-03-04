@@ -8,6 +8,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeVideoContainerComponent } from './home-video-container/home-video-container.component';
 import { IndividualVideoComponent } from './individual-video/individual-video.component';
 import { HomeComponent } from './home/home.component';
+import { IndividualSideCardsComponent } from './individual-side-cards/individual-side-cards.component';
+import { YoutubeLikesTitleComponent } from './youtube-likes-title/youtube-likes-title.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HomeComponent } from './home/home.component';
     SidebarComponent,
     HomeVideoContainerComponent,
     IndividualVideoComponent,
-    HomeComponent
+    HomeComponent,
+    IndividualSideCardsComponent,
+    YoutubeLikesTitleComponent,
+    SubscribeComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
