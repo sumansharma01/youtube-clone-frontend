@@ -1,13 +1,13 @@
 <div class="subscribe">
     <div class="row">
         <div class="col-1">
-
+            <img src={{video.channelLogo}} alt="" style="width: 100%;">
         </div>
         <div class="col-11">
             <div class="row">
                 <div class="col-10" style="color:white;">
-                    Tutorials Website <br>
-                    <span class="text-muted">   16.2 subscribers</span>
+                    {{video.channelName}} <br>
+                    <span class="text-muted">   {{video.videoViews/100}}k subscribers</span>
                 </div>
                 <div class="col-2">
                     <button class="subscribe-button">SUBSCRIBE</button>
@@ -15,7 +15,7 @@
             </div>
             <div class="row">
                 <div class="text" style="color:white; margin-top: 20px;">
-                    In this video we will go over MongoDB, which is a popular NoSQL database that is commonly used with Node.js and other technologies.
+                    {{video.description}}
             </div>
             </div>
         </div>

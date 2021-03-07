@@ -205,30 +205,38 @@
 
 /* home-video-container */
 .home-video-container{
+    /* border:5px solid yellow; */
     color: white; 
     margin-top:15px;
 }
 
 .home-cards{
-    width:300px; 
-    /* border:5px solid yellow; */
+    width:250px; 
+    /* border:5px solid red; */
     height:317px;
     overflow: hidden;
     padding:0px; margin:0px;
 }
 
+.home-cards .row{
+    /* border:3px solid green; */
+}
 
+.home-cards .row .col{
+    /* border:2px solid cyan; */
+}
 
 .home-cards-second-row .col-2{
     padding:0px; 
 }
 .home-cards-second-row .col-2 img{
-    margin-left: 10px;
+    margin-left: -10px;
     width: 50px;
 }
 
 .home-cards-image img{
     max-width: 100%;
+    height:200px;
 }
 
 
@@ -265,6 +273,15 @@
     font-weight: 900;
     letter-spacing: 1px;
     border-radius: 5px;
+}
+
+
+.create-video .col-11 input[type="text"]{
+    background-color: #1a1a1a;
+    border:none;
+    
+    text-indent: 10px;
+    color: white;
 }
 
 

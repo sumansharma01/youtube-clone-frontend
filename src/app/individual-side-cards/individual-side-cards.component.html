@@ -1,16 +1,18 @@
-<div class="individual-side-cards">
-    <a href="" style="text-decoration: none; color: white;">
+<div class="row">
+    <div class="col" *ngFor="let video of videos">
+<div class="individual-side-cards" style="margin-bottom: 10px;">
+    <a [routerLink]="['/individual',video.id]" style="text-decoration: none; color: white;">
     <div class="row">
         <div class="col-6">
-            <img src="../../assets/w2s.JPG" alt="" style="height:100px; width:120px">
+            <img src={{video.thumbnail}} alt="" style="height:100px; width:120px">
         </div>
         <div class="col-6">
                 <div class="individual-side-cards-title" style="font-size: 10px; color:white; text-align: justify; overflow: hidden;">
-                    W2S is a good youtuber
+                    {{video.videoName}}
                 </div>
                 <div class="individual-side-cards-secondary-title">
-                    <span class="text-muted" style="font-size: 10px;"><b>W2S</b></span><br />
-                    <span class="text-muted" style="font-size: 8px;">420k views 1 year ago</span>
+                    <span class="text-muted" style="font-size: 10px;"><b>{{video.channelName}}</b></span><br />
+                    <span class="text-muted" style="font-size: 8px;">{{video.videoViews/1000}}k views</span>
                 </div>
                    
             
@@ -21,4 +23,6 @@
         </div>
     </div>
 </a>
+</div>
+</div>
 </div>

@@ -1,33 +1,45 @@
 
-<div class="home-video-container">
+<div class="home-video-container" >
+    
+    <div class="row">
+        <div class="col" *ngFor="let video of videos">
+    <div class="home-cards" >
+        
+            
 
-    <div class="home-cards">
-        <a routerLink="/individual" style="text-decoration: none; color:white">
-        <div class="row">
+            
+        <a [routerLink]='["/individual",video.id]' style="text-decoration: none; color:white">
+            <!-- {{video.id}} -->
+        <div class="row" >
             <div class="home-cards-image">
-                <img src="../../assets/w2s.JPG" alt="">
+                <img src={{video.thumbnail}}>
             </div>
         </div>
         <div class="row home-cards-second-row">
             <div class="col-2">
-                <img src="../../assets/profile.JPG" alt="" style="border-radius: 20px;;">
+                <img src={{video.channelLogo}} style="border-radius: 20px;;">
             </div>
             <div class="col-10">
                 <div class="row">
                     <div class="col-10" style="text-align: justify; font-size: 15px;">
-                        <b>W2S throws a controller at his best friend</b>
+                        <b>{{video.videoName}}</b>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-10 text-muted" style="font-size: 12px;">
-                        <b>W2S clips</b>
-                        <p>174k views 13 hours ago</p>
+                        <b>{{video.channelName}}</b>
+                        <p>{{video.videoViews/1000}}k views</p>
                     </div>
                 </div>
             </div>
         </div>
+   
     </a>
-    </div>
+</div>
+</div>
+</div>
+
+    
 </div>
 
 

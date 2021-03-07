@@ -12,6 +12,9 @@ import { IndividualSideCardsComponent } from './individual-side-cards/individual
 import { YoutubeLikesTitleComponent } from './youtube-likes-title/youtube-likes-title.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CommentsComponent } from './comments/comments.component';
+import { CreateVideoComponent } from './create-video/create-video.component';
+
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { CommentsComponent } from './comments/comments.component';
     IndividualSideCardsComponent,
     YoutubeLikesTitleComponent,
     SubscribeComponent,
-    CommentsComponent
+    CommentsComponent,
+    CreateVideoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

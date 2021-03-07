@@ -15,4 +15,8 @@ export class NavbarComponent implements OnInit {
   home(){
     this.router.navigate(["/"]);
   }
+
+  generate(){
+    return this.router.navigate(["/create"]);
+  }
 }
