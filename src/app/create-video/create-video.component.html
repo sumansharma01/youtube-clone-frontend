@@ -1,100 +1,152 @@
 <app-navbar></app-navbar>
+
+
+
 <div class="row create-video">
-    <div class="col-1">
-        <div class="sidebar">
-            <app-sidebar></app-sidebar>
-        </div>
+  <div class="col-1">
+    <div class="sidebar">
+      <app-sidebar></app-sidebar>
     </div>
+  </div>
 
-    <div class="col-11" style="color:white;">
-       <form>
-           <div class="row">
-               <div class="col-6">
-        <div class="form-group">
-            <label for="exampleInputId">Id</label>
-            <input type="text" class="form-control" id="exampleInputId">
-          </div>
-               </div>
+  <div class="col-11" style="color: white">
+    <form [formGroup]='createVideo'>
+      <div class="row">
+        
 
-               <div class="col-6">
-        <div class="form-group">
+        <div class="col-6">
+          <div class="form-group">
             <label for="exampleInputVideoName">VideoName</label>
-            <input type="text" class="form-control" id="exampleInputVideoName">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputVideoName"
+              name="videoName"
+              formControlName='videoName'
+            />
           </div>
         </div>
-        </div>
+      </div>
 
-            <div class="row">
-                <div class="col-6">
+      
+
+      <div class="row">
+        <div class="col-6">
           <div class="form-group">
             <label for="exampleInputVideoViews">VideoViews</label>
-            <input type="text" class="form-control" id="exampleInputVideoViews">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputVideoViews"
+              name="videoViews"
+              formControlName='videoViews'
+            />
           </div>
-                </div>
+        </div>
 
-                <div class="col-6">
+        <div class="col-6">
           <div class="form-group">
             <label for="exampleInputUploadDate">UploadDate</label>
-            <input type="text" class="form-control" id="exampleInputUploadDate">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputUploadDate"
+              name="uploadDate"
+              formControlName='uploadDate'
+            />
           </div>
-          </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="row">
-                <div class="col-6">
+      <div class="row">
+        <div class="col-6">
           <div class="form-group">
             <label for="exampleInputThumbnail">Thumbnail</label>
-            <input type="text" class="form-control" id="exampleInputThumbnail">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputThumbnail"
+              name="thumbnail"
+              formControlName='thumbnail'
+            />
           </div>
-                </div>
+        </div>
 
-                <div class="col-6">
+        <div class="col-6">
           <div class="form-group">
             <label for="exampleInputChannelName">ChannelName</label>
-            <input type="text" class="form-control" id="exampleInputChannelName">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputChannelName"
+              name="channelName"
+              formControlName='channelName'
+            />
           </div>
-          </div>
-
         </div>
+      </div>
 
-
-            <div class="row">
-                <div class="col-6">
+      <div class="row">
+        <div class="col-6">
           <div class="form-group">
             <label for="exampleInputChannelLogo">ChannelLogo</label>
-            <input type="text" class="form-control" id="exampleInputChannelLogo">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputChannelLogo"
+              name="channelLogo"
+              formControlName='channelLogo'
+            />
           </div>
-                </div>
+        </div>
 
-                <div class="col-6">
+        <div class="col-6">
           <div class="form-group">
             <label for="exampleInputVideoTitle">VideoTitle</label>
-            <input type="text" class="form-control" id="exampleInputVideoTitle">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputVideoTitle"
+              name="videoTitle"
+              formControlName='videoTitle'
+            />
           </div>
-          </div>
-
         </div>
+      </div>
 
-
-        <div class="row">
-            <div class="col-6">
+      <div class="row">
+        <div class="col-6">
           <div class="form-group">
             <label for="exampleInputDescription">Description</label>
-            <input type="text" class="form-control" id="exampleInputDescription">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputDescription"
+              name="description"
+              formControlName='description'
+            />
           </div>
-          </div>
+        </div>
 
-          <div class="col-6">
-              <div class="row">
-                  <div class="col-6">
-          <button class="btn btn-success">ADD</button>
-        </div>
         <div class="col-6">
-          <button class="btn btn-danger">Delete</button>
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn-success" (click)='saveVideo()'>ADD</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger">Delete</button>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        </div>
-       </form>
-    </div>
+      </div>
+    </form>
+  </div>
 </div>
+
+
+<div style="color:white; margin-left: 100px;">
+  value: {{createVideo.value | json}}
+</div>
+
+
+

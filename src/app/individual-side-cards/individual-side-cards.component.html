@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col" *ngFor="let video of videos">
 <div class="individual-side-cards" style="margin-bottom: 10px;">
-    <a [routerLink]="['/individual',video.id]" style="text-decoration: none; color: white;">
+    <a [routerLink]='["/individual",video.id]' style="text-decoration: none; color: white;">
     <div class="row">
         <div class="col-6">
             <img src={{video.thumbnail}} alt="" style="height:100px; width:120px">

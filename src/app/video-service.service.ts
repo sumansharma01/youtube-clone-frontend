@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class VideoServiceService {
 
-  base_url:string="http://localhost:8080/youtube/api/videos";
+  base_url:string="https://youtubebackend.herokuapp.com/youtube/api/videos";
   constructor(private http:HttpClient) { }
 
   getAllVideos(){
@@ -14,6 +14,10 @@ export class VideoServiceService {
   }
   getVideoById(id:any){
     return this.http.get(`${this.base_url}/${id}`);
+  }
+
+  saveVideo(createVideo:any){
+    this.http.post(`${this.base_url}`,createVideo).subscribe(r=>{});
   }
 
 }
